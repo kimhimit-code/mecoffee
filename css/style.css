@@ -190,14 +190,20 @@ color:white;
     overflow: hidden;
 
 }
-.home p,h1,h2,h3,h4,h5{
-    margin: 10px 25px 10px 25px;
+
+.home p,h1,h2,h3,h4,h5,span{
+    margin: 10px 15px 10px 15px;
+}
+
+.home span{
+    font-weight: bold;
+    color: #c4730a;
 }
 
 .home-fan{
-     width: 100%;
-    
-    height: 310px;
+
+    width: 100%;
+    height: 345px;
     /* background-color: rgb(150, 7, 38); */
     /* margin-left: 15px; */
     float: left;
@@ -206,8 +212,6 @@ color:white;
     flex-wrap:wrap;
     justify-content:space-around;
     overflow: hidden;
-
-    
 }
 
 .home-story{
@@ -296,7 +300,7 @@ margin-bottom: 15px;
 .footer{
      width: 100%;
     height: 250px;
-    /* background-color: rgb(10, 10, 9); */
+    background-color: rgb(10, 10, 9);
     margin: 15px;
     float: left;
 
@@ -415,3 +419,102 @@ margin-bottom: 15px;
     font-weight: bold;
 
 }
+
+/* page about [gallary,mission,corevalue]*/
+
+.gallary{
+
+    width: 100%;
+    height: 280px;
+    margin: 15px;
+    background-color: blueviolet;
+    float: left;
+ 
+
+}
+
+.mission{
+
+   
+    width: 100%;
+    height: 380px;
+    margin: 15px;
+    /* background-color: rgb(10, 207, 10); */
+    float: left;
+    text-align: center;
+ 
+
+}
+
+.corevalue{
+
+   
+    width: 100%;
+    height: 280px;
+    margin: 15px;
+    /* background-color: rgb(211, 42, 84); */
+    float: left;
+    text-align: center;
+
+
+
+}
+
+.corevalue-box{
+    width: 100%;
+    height: 85%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin-top: 15px; */
+    padding-top: 15px;
+    
+}
+
+.corevalue-box .itembox{
+
+    width: 30%;
+    height: 100%;
+    border-radius: 6px;
+   /* background-color: rgb(62, 153, 53); */
+   text-align: center;
+   align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #703a0d;
+    text-align: center;
+
+}
+
+
+
+.img-box{
+    width: 100%;
+    height: 65%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.img-box img{
+
+    width: 20%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+
