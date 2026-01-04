@@ -24,8 +24,9 @@ font-family: "Questrial", sans-serif;
 .container{
 
     width: 1200px;
-    height: 1200px;
+    height: auto;
     background-color: antiquewhite;
+    /* overflow: scroll; */
 }
 
 .nav{
@@ -328,7 +329,7 @@ color:white;
     flex-direction: row;
     flex-wrap:wrap;
     justify-content:space-around;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .home-story{
@@ -349,9 +350,9 @@ color:white;
 
 .box-fav{
 
-     width: 32%;
+     width: 238px;
     
-    height: 98%;
+    height: auto;
     /* background-color: rgb(59, 43, 6); */
     border-radius: 16px;
     color:rgba(83, 77, 77, 0.801)
@@ -492,9 +493,57 @@ margin-bottom: 15px;
     height: auto;
     /* background-color: #13e29d; */
     float: left;
+    overflow-y: scroll;
 
 
 }
+
+.home-card{
+
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(150, 7, 38); */
+    /* margin-left: 15px; */
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    overflow: hidden;
+}
+
+
+.box-card{
+
+     width: 190px;
+    
+    height: auto;
+    /* background-color: rgb(59, 43, 6); */
+    border-radius: 16px;
+    color:rgba(83, 77, 77, 0.801)
+  
+
+}
+
+.box-card img{
+ width: 100%;              /* responsive width */
+  max-width: 600px;         /* optional max size */
+  height: 65%;             /* maintain aspect ratio */
+  border-radius: 16px;      /* soft rounded corners */
+  /* object-fit: cover;        crop nicely if needed */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle depth */
+margin-bottom: 15px;
+
+}
+
+.box-card img:hover{
+      transform: scale(1.05);
+      transition: transform 0.5s ease;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+
+}
+
+
 
 .menu-category ul{
     margin: 0;
