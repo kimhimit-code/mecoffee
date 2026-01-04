@@ -1,5 +1,11 @@
 
 
+   :root {
+            --primary-color: #74391e; /* Dark Coffee Brown */
+            --accent-color: #5d4037;  /* Medium Brown */
+            --bg-color: #a00e0e;      /* Off-white background */
+        }
+
 body,html,p,h1,h2,h5{
     margin: 0;
     padding: 0;
@@ -19,14 +25,20 @@ font-family: "Questrial", sans-serif;
 
     width: 1200px;
     height: 1200px;
-    /* background-color: antiquewhite; */
+    background-color: antiquewhite;
 }
 
 .nav{
     /* background-color: black; */
     height: 60px;
-    width: 900px;
+    width: 100%;
+
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content:space-around;
 }
 
 .menu{
@@ -36,12 +48,99 @@ font-family: "Questrial", sans-serif;
 }
 
 .logo{
+    width: 25%;
 
-    background-color: aliceblue;
-    width: 250px;
-    height: 60px;
-    float: left;
+    display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            /* background: white; */
+        /* background-color:coral; */
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+  
 }
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 15px 25px; */
+    border-radius: 2em / 5em;
+}
+
+ /* Horizontal layout for Beans + Text */
+        .main-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Twin Coffee Beans Grouping */
+        .twin-beans {
+            display: flex;
+            gap: 4px;
+            position: relative;
+        }
+
+        /* Coffee Bean CSS Shape */
+        .bean {
+            position: relative;
+            width: 25px;
+            height: 32px;
+            background-color: var(--primary-color);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* The characteristic line in the middle of the bean */
+        .bean::before {
+            content: '';
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            width: 2px;
+            height: 90%;
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateX(-50%);
+            border-radius: 50%;
+            box-shadow: 0 0 2px rgba(0,0,0,0.5);
+        }
+
+        /* Positioning the twin beans side-by-side */
+        .bean-1 {
+            transform: rotate(-10deg);
+        }
+
+        .bean-2 {
+            transform: rotate(10deg);
+            background-color: var(--accent-color);
+            margin-top: 5px;
+        }
+
+        /* Text Styling */
+        .logo-text {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 900;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1;
+        }
+
+          .tagline {
+            color: var(--primary-color);
+            font-size: 1rem;
+            letter-spacing: 8px;
+            font-weight: 400;
+            margin-top: 10px;
+            text-transform: uppercase;
+            /* opacity: 0.7; */
+            width: 100%;
+            text-align: right; /* Aligns with the end of the text */
+        }
 
 .menu ul{
 
@@ -108,6 +207,24 @@ color:white;
     }
 
 
+    .panel {
+
+    position: relative; 
+    width: 100%;
+    height: 40px;
+    /* margin: 15px; */
+    background-color: rgb(243, 242, 245);
+    /* color: saddlebrown; */
+    float: left;
+    overflow: hidden;
+    z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        
+}
 
     .slider {
 
@@ -822,3 +939,61 @@ button:hover {
     .content-line {
         display: block;
     }
+
+    /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.container{
+
+    width: 1200px;
+    height: 1200px;
+    background-color: antiquewhite;
+}
+
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .container{
+
+    width: 992px;
+    height: 1200px;
+    background-color: rgb(13, 194, 13);
+}
+	
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .container{
+
+    width: 768px;
+    height: 1200px;
+    background-color: rgb(32, 9, 163);
+}
+	
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+
+    .container{
+
+    width: 576px;
+    height: 1200px;
+    background-color: rgb(138, 84, 13);
+}
+	
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    .container{
+
+    width: 575px;
+    height: 1200px;
+    background-color: rgb(5, 5, 5);
+}
+	
+}
+
