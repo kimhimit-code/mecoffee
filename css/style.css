@@ -257,7 +257,7 @@ color:white;
       width: 100%;
       height: 100%;
        border-radius: 10px;
-       background-image: url(/img/coffee.jpg);
+       background-image: url(../coffee.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
