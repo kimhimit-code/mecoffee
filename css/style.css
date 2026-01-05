@@ -257,7 +257,7 @@ color:white;
       width: 100%;
       height: 100%;
        border-radius: 10px;
-       background-image: url(../coffee.jpg);
+       background-image: url(bgimg/coffee.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -614,7 +614,7 @@ margin-bottom: 15px;
     justify-content: center;
     text-align: center;
 
-    background-image: url(/img/coffe\ counter.jpg);
+    background-image: url(bgimg/cafecounter.jpg);
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
